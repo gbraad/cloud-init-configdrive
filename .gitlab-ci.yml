@@ -1,0 +1,13 @@
+image: fedora:24
+
+pages:
+  script:
+  - dnf install -y mkisofs
+  - ./gen.sh
+  - mkdir public
+  - mv instance0-cidata.iso public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
