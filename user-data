@@ -1,0 +1,6 @@
+#cloud-config
+password: secrete
+chpasswd: {expire: False}
+ssh_pwauth: True
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEApqJ822y8sbsPUA4Ot05bswZG3GxOX469Gyj1NypzpKrve1h77G/n/58r7wPWlgWcbNfyuES+dVFFdSIviYziS0EYB/psE10XmEeGROw6t/CPrPn2GpnS6bBDh57mxG0KtuZ713dAETDPlx8xoYT/qmpQjCpfVu9S4I/B8kk5FWU= me@gbraad.nl
